@@ -25,7 +25,18 @@ const ItemCtrl = (function() {
 })();
 
 const UICtrl = (function() {
-  console.log('UI Controller');
+  return {
+    populateItemList: function(items) {
+      let html = '';
+      items.forEach(function(item) {
+        html += `<li id="item-${item.id}" class="collection-item"><strong>${
+          item.name
+        }</strong><em>${
+          item.calories
+        } Calories</em><a href="#" class="secondary-content">Edit Icon Goes Here</a></li>`;
+      });
+    }
+  };
 })();
 
 const App = (function(ItemCtrl, UICtrl) {
