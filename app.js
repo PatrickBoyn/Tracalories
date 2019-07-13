@@ -5,3 +5,7 @@ const ItemCtrl = (function() {
 const UICtrl = (function() {
   console.log('UI Controller');
 })();
+
+const App = (function(ItemCtrl, UICtrl) {
+  console.log('App controller.');
+})(ItemCtrl, UICtrl);
