@@ -6,7 +6,11 @@ const ItemCtrl = (function() {
   };
 
   const state = {
-    items: [],
+    items: [
+      { id: 0, name: 'stake dinner', calories: 1200 },
+      { id: 2, name: 'cookie', calories: 400 },
+      { id: 3, name: 'eggs', calories: 300 }
+    ],
     currentItem: null,
     totalCalories: 0
   };
