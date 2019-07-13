@@ -16,10 +16,10 @@ const ItemCtrl = (function() {
   };
   return {
     getItems: function() {
-      return data.items;
+      return state.items;
     },
     logData: function() {
-      return data;
+      return state;
     }
   };
 })();
