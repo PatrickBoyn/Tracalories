@@ -15,6 +15,9 @@ const ItemCtrl = (function() {
     totalCalories: 0
   };
   return {
+    getItems: function() {
+      return data.items;
+    },
     logData: function() {
       return data;
     }
