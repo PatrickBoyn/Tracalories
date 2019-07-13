@@ -34,6 +34,8 @@ const App = (function(ItemCtrl, UICtrl) {
       console.log('Initializing application...');
       const items = ItemCtrl.getItems();
 
+      UICtrl.populateItemList();
+
       console.log(items);
     }
   };
