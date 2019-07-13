@@ -5,7 +5,11 @@ const ItemCtrl = (function() {
     this.calories = calories;
   };
 
-  const state = {};
+  const state = {
+    items: [],
+    currentItem: null,
+    totalCalories: 0
+  };
 })();
 
 const UICtrl = (function() {
