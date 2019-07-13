@@ -28,13 +28,14 @@ const UICtrl = (function() {
   return {
     populateItemList: function(items) {
       let html = '';
-      items.forEach(function(item) {
-        html += `<li id="item-${item.id}" class="collection-item"><strong>${
+
+      items.forEach(item => {
+        html += `<li class="collection-item" id="item-${item.id}">${
           item.name
-        }</strong><em>${
-          item.calories
-        } Calories</em><a href="#" class="secondary-content">Edit Icon Goes Here</a></li>`;
+        }: <em>${item.calories} Calories</em>
+        <a href="#" class="edit-item">Edit Item</a></li>`;
       });
+      document.querySelector('#item-list').innerHTML = html;
     }
   };
 })();
@@ -45,7 +46,7 @@ const App = (function(ItemCtrl, UICtrl) {
       console.log('Initializing application...');
       const items = ItemCtrl.getItems();
 
-      UICtrl.populateItemList();
+      UICtrl.populateItemList(items);
 
       console.log(items);
     }
