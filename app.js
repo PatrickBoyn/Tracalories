@@ -26,5 +26,9 @@ const UICtrl = (function() {
 })();
 
 const App = (function(ItemCtrl, UICtrl) {
-  console.log('App controller.');
+  return {
+    init: function() {
+      console.log('Initializing application...');
+    }
+  };
 })(ItemCtrl, UICtrl);
