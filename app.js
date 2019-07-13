@@ -32,3 +32,5 @@ const App = (function(ItemCtrl, UICtrl) {
     }
   };
 })(ItemCtrl, UICtrl);
+
+App.init();
