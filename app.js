@@ -1,5 +1,5 @@
-const ItemCtrl = (function() {
-  const Item = function(id, name, calories) {
+const ItemCtrl = (() => {
+  const Item = (id, name, calories) => {
     this.id = id;
     this.name = name;
     this.calories = calories;
@@ -15,18 +15,18 @@ const ItemCtrl = (function() {
     totalCalories: 0
   };
   return {
-    getItems: function() {
+    getItems: () => {
       return state.items;
     },
-    logData: function() {
+    logData: () => {
       return state;
     }
   };
 })();
 
-const UICtrl = (function() {
+const UICtrl = (() => {
   return {
-    populateItemList: function(items) {
+    populateItemList: items => {
       let html = '';
 
       items.forEach(item => {
@@ -40,9 +40,9 @@ const UICtrl = (function() {
   };
 })();
 
-const App = (function(ItemCtrl, UICtrl) {
+const App = ((ItemCtrl, UICtrl) => {
   return {
-    init: function() {
+    init: () => {
       console.log('Initializing application...');
       const items = ItemCtrl.getItems();
 
