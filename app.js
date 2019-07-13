@@ -1,5 +1,9 @@
 const ItemCtrl = (function() {
-  console.log('Item controller  ');
+  const Item = function(id, name, calories) {
+    this.id = id;
+    this.name = name;
+    this.calories = calories;
+  };
 })();
 
 const UICtrl = (function() {
