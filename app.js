@@ -43,7 +43,6 @@ const UICtrl = (() => {
 const App = ((ItemCtrl, UICtrl) => {
   return {
     init: () => {
-      console.log('Initializing application...');
       const items = ItemCtrl.getItems();
 
       UICtrl.populateItemList(items);
