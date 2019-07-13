@@ -25,6 +25,9 @@ const ItemCtrl = (() => {
 })();
 
 const UICtrl = (() => {
+  const UISelectors = {
+    itemList: '#item-list'
+  };
   return {
     populateItemList: items => {
       let html = '';
@@ -35,7 +38,7 @@ const UICtrl = (() => {
         }: <em>${item.calories} Calories</em>
         <a href="#" class="edit-item">Edit Item</a></li>`;
       });
-      document.querySelector('#item-list').innerHTML = html;
+      document.querySelector(UISelectors.itemList).innerHTML = html;
     }
   };
 })();
