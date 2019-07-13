@@ -4,6 +4,8 @@ const ItemCtrl = (function() {
     this.name = name;
     this.calories = calories;
   };
+
+  const state = {};
 })();
 
 const UICtrl = (function() {
