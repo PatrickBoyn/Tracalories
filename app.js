@@ -65,7 +65,7 @@ const App = ((ItemCtrl, UICtrl) => {
 
       UICtrl.populateItemList(items);
 
-      console.log(items);
+      loadEventListeners();
     }
   };
 })(ItemCtrl, UICtrl);
