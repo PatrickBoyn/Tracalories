@@ -56,7 +56,8 @@ const App = ((ItemCtrl, UICtrl) => {
   };
 
   const itemAddSubmit = e => {
-    console.log('Added Item.');
+    const input = UICtrl.getItemInput();
+
     e.preventDefault();
   };
   return {
