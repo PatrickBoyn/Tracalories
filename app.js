@@ -18,6 +18,7 @@ const ItemCtrl = (() => {
     getItems: () => {
       return state.items;
     },
+    addItem: (name, calories) => {},
     logData: () => {
       return state;
     }
