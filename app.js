@@ -41,7 +41,12 @@ const UICtrl = (() => {
       });
       document.querySelector(UISelectors.itemList).innerHTML = html;
     },
-    getItemInput: () => {},
+    getItemInput: () => {
+      return {
+        name: '',
+        calories: ''
+      };
+    },
     getSelectors: () => {
       return UISelectors;
     }
