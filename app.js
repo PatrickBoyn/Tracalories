@@ -25,6 +25,8 @@ const ItemCtrl = (() => {
       } else {
         ID = 0;
       }
+
+      calories = parseInt(calories);
     },
     logData: () => {
       return state;
