@@ -45,8 +45,8 @@ const UICtrl = (() => {
     },
     getItemInput: () => {
       return {
-        name: '',
-        calories: ''
+        name: document.querySelector(UISelectors.itemNameInput).value,
+        calories: document.querySelector(UISelectors.itemCaloriesInput).value
       };
     },
     getSelectors: () => {
