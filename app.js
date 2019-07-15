@@ -66,7 +66,9 @@ const App = ((ItemCtrl, UICtrl) => {
   const itemAddSubmit = e => {
     const input = UICtrl.getItemInput();
 
-    console.log(input);
+    if (input.name !== '' && input.calories !== '') {
+      console.log('Success!');
+    }
 
     e.preventDefault();
   };
