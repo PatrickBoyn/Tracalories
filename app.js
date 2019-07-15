@@ -44,6 +44,7 @@ const UICtrl = (() => {
 })();
 
 const App = ((ItemCtrl, UICtrl) => {
+  const loadEventListeners = () => {};
   return {
     init: () => {
       const items = ItemCtrl.getItems();
