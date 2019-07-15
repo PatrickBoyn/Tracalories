@@ -19,7 +19,12 @@ const ItemCtrl = (() => {
       return state.items;
     },
     addItem: (name, calories) => {
-      console.log(name, calories);
+      let ID;
+      if (data.items.length > 0) {
+        ID = data.items[data.items.length - 1].id + 1;
+      } else {
+        ID = 0;
+      }
     },
     logData: () => {
       return state;
