@@ -8,8 +8,8 @@ const ItemCtrl = (() => {
   const state = {
     items: [
       { id: 0, name: 'stake dinner', calories: 1200 },
-      { id: 2, name: 'cookie', calories: 400 },
-      { id: 3, name: 'eggs', calories: 300 }
+      { id: 1, name: 'cookie', calories: 400 },
+      { id: 2, name: 'eggs', calories: 300 }
     ],
     currentItem: null,
     totalCalories: 0
