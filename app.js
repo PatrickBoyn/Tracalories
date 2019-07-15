@@ -50,6 +50,9 @@ const UICtrl = (() => {
 const App = ((ItemCtrl, UICtrl) => {
   const loadEventListeners = () => {
     const UISelectors = UICtrl.getSelectors();
+    document
+      .querySelector(UISelectors.addBtn)
+      .addEventListener('click', itemAddSubmit);
   };
   return {
     init: () => {
