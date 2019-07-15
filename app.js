@@ -27,7 +27,9 @@ const ItemCtrl = (() => {
 const UICtrl = (() => {
   const UISelectors = {
     itemList: '#item-list',
-    addBtn: '.add-btn'
+    addBtn: '.add-btn',
+    itemNameInput: '#item-name',
+    itemCaloriesInput: '#item-calories'
   };
   return {
     populateItemList: items => {
