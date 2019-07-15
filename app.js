@@ -67,7 +67,7 @@ const App = ((ItemCtrl, UICtrl) => {
     const input = UICtrl.getItemInput();
 
     if (input.name !== '' && input.calories !== '') {
-      console.log('Success!');
+      const newItem = ItemCtrl.addItem(input.name, input.calories);
     }
 
     e.preventDefault();
