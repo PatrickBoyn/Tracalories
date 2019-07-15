@@ -39,6 +39,9 @@ const UICtrl = (() => {
         <a href="#" class="edit-item">Edit Item</a></li>`;
       });
       document.querySelector(UISelectors.itemList).innerHTML = html;
+    },
+    getSelectors: () => {
+      return UISelectors;
     }
   };
 })();
