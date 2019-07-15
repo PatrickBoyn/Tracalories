@@ -54,6 +54,10 @@ const App = ((ItemCtrl, UICtrl) => {
       .querySelector(UISelectors.addBtn)
       .addEventListener('click', itemAddSubmit);
   };
+
+  const itemAddSubmit = e => {
+    e.preventDefault();
+  };
   return {
     init: () => {
       const items = ItemCtrl.getItems();
