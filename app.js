@@ -27,6 +27,12 @@ const ItemCtrl = (() => {
       }
 
       calories = parseInt(calories);
+
+      newItem = new Item(ID, name, calories);
+
+      state.items.push(newItem);
+
+      return newItem;
     },
     logData: () => {
       return state;
