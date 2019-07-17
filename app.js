@@ -33,7 +33,12 @@ const ItemCtrl = (() => {
       console.log(state);
       return newItem;
     },
-    getTotalCalories: () => {},
+    getTotalCalories: () => {
+      let total = 0;
+
+      state.items.forEach(item => {});
+      state.i;
+    },
     logData: () => {
       return state;
     }
