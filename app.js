@@ -101,6 +101,8 @@ const App = ((ItemCtrl, UICtrl) => {
       const newItem = ItemCtrl.addItem(input.name, input.calories);
       UICtrl.addListItem(newItem);
 
+      const totalCalories = ItemCtrl.getTotalCalories();
+
       UICtrl.clearInput();
     }
 
