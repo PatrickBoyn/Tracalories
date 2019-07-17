@@ -55,7 +55,8 @@ const UICtrl = (() => {
     itemList: '#item-list',
     addBtn: '.add-btn',
     itemNameInput: '#item-name',
-    itemCaloriesInput: '#item-calories'
+    itemCaloriesInput: '#item-calories',
+    totalCalories: '.total-calories'
   };
   return {
     populateItemList: items => {
@@ -91,7 +92,7 @@ const UICtrl = (() => {
       document.querySelector(UISelectors.itemNameInput).value = '';
       document.querySelector(UISelectors.itemCaloriesInput).value = '';
     },
-    showTotalCalories: () => {},
+    showTotalCalories: totals => {},
     getSelectors: () => {
       return UISelectors;
     }
