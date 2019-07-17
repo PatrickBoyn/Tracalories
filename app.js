@@ -33,6 +33,7 @@ const ItemCtrl = (() => {
       console.log(state);
       return newItem;
     },
+    getTotalCalories: () => {},
     logData: () => {
       return state;
     }
