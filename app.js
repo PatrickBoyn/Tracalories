@@ -36,8 +36,11 @@ const ItemCtrl = (() => {
     getTotalCalories: () => {
       let total = 0;
 
-      state.items.forEach(item => {});
-      state.i;
+      state.items.forEach(item => {
+        total += item.calories;
+      });
+
+      state.totalCalories = total;
     },
     logData: () => {
       return state;
