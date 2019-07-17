@@ -123,6 +123,10 @@ const App = ((ItemCtrl, UICtrl) => {
       UICtrl.clearInput();
     }
 
+    const totalCalories = ItemCtrl.getTotalCalories();
+
+    UICtrl.showTotalCalories(totalCalories);
+
     e.preventDefault();
   };
   return {
