@@ -91,6 +91,7 @@ const UICtrl = (() => {
       document.querySelector(UISelectors.itemNameInput).value = '';
       document.querySelector(UISelectors.itemCaloriesInput).value = '';
     },
+    showTotalCalories: () => {},
     getSelectors: () => {
       return UISelectors;
     }
