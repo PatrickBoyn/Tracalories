@@ -111,7 +111,11 @@ const App = ((ItemCtrl, UICtrl) => {
     init: () => {
       const items = ItemCtrl.getItems();
 
-      UICtrl.populateItemList(items);
+      if (items.length === 0) {
+        UICtrl.hideList();
+      } else {
+        UICtrl.populateItemList(items);
+      }
 
       loadEventListeners();
     }
