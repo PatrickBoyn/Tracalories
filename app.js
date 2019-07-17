@@ -41,6 +41,8 @@ const ItemCtrl = (() => {
       });
 
       state.totalCalories = total;
+
+      return state.totalCalories;
     },
     logData: () => {
       return state;
