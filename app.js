@@ -1,7 +1,7 @@
 const ItemCtrl = (() => {
   // Apparently in order to be a constructor
   // This must be a "function", and not an arrow function.
-  const Item = function (id, name, calories)  {
+  const Item = function(id, name, calories) {
     this.id = id;
     this.name = name;
     this.calories = calories;
@@ -78,6 +78,10 @@ const UICtrl = (() => {
         .querySelector(UISelectors.itemList)
         .insertAdjacentElement('beforeend', li);
     },
+    clearInput: () => {
+      document.querySelector(UISelectors.itemNameInput).value = '';
+      document.querySelector(UISelectors.itemCaloriesInput).value = '';
+    },
     getSelectors: () => {
       return UISelectors;
     }
@@ -99,6 +103,8 @@ const App = ((ItemCtrl, UICtrl) => {
       const newItem = ItemCtrl.addItem(input.name, input.calories);
       UICtrl.addListItem(newItem);
     }
+
+    UICtrl.clearInput();
 
     e.preventDefault();
   };
