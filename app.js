@@ -9,6 +9,7 @@ const ItemCtrl = (() => {
 
   const state = {
     items: [],
+    // Should be null for now.
     currentItem: null,
     totalCalories: 0
   };
