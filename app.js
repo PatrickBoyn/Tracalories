@@ -1,5 +1,7 @@
 const ItemCtrl = (() => {
-  const Item = (id, name, calories) => {
+  // Apparently in order to be a constructor
+  // This must be a "function", and not an arrow function.
+  const Item = function (id, name, calories)  {
     this.id = id;
     this.name = name;
     this.calories = calories;
@@ -20,8 +22,8 @@ const ItemCtrl = (() => {
     },
     addItem: (name, calories) => {
       let ID;
-      if (data.items.length > 0) {
-        ID = data.items[data.items.length - 1].id + 1;
+      if (state.items.length > 0) {
+        ID = state.items[state.items.length - 1].id + 1;
       } else {
         ID = 0;
       }
@@ -72,6 +74,9 @@ const UICtrl = (() => {
       li.innerHTML = `<strong>${item.name}: </strong> <em>${
         item.calories
       } Calories</em> <a href="#" class="secondary-content">Edit Item </a>`;
+      document
+        .querySelector(UISelectors.itemList)
+        .insertAdjacentElement('beforeend', li);
     },
     getSelectors: () => {
       return UISelectors;
