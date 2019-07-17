@@ -67,6 +67,8 @@ const UICtrl = (() => {
     },
     addListItem: item => {
       const li = document.createElement('li');
+      li.className = 'collection-item';
+      li.id = `item-${item.id}`;
     },
     getSelectors: () => {
       return UISelectors;
