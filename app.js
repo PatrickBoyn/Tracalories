@@ -29,7 +29,7 @@ const ItemCtrl = (() => {
       newItem = new Item(ID, name, calories);
 
       state.items.push(newItem);
-
+      console.log(state);
       return newItem;
     },
     logData: () => {
