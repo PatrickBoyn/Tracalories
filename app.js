@@ -114,6 +114,8 @@ const App = ((ItemCtrl, UICtrl) => {
 
       const totalCalories = ItemCtrl.getTotalCalories();
 
+      UICtrl.showTotalCalories(totalCalories);
+
       UICtrl.clearInput();
     }
 
