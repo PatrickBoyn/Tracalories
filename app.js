@@ -54,7 +54,7 @@ const UICtrl = (() => {
   const UISelectors = {
     itemList: '#item-list',
     addBtn: '.add-btn',
-    updateBtn: '.upadate-btn',
+    updateBtn: '.update-btn',
     deleteBtn: '.delete-btn',
     backBtn: '.back-btn',
     itemNameInput: '#item-name',
