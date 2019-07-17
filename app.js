@@ -103,6 +103,7 @@ const UICtrl = (() => {
     },
     clearEditState: () => {
       UICtrl.clearInput();
+      document.querySelector(UISelectors.itemList).style.display = 'none';
     }
   };
 })();
