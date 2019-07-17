@@ -103,7 +103,10 @@ const UICtrl = (() => {
     },
     clearEditState: () => {
       UICtrl.clearInput();
-      document.querySelector(UISelectors.itemList).style.display = 'none';
+      document.querySelector(UISelectors.updateBtn).style.display = 'none';
+      document.querySelector(UISelectors.deleteBtn).style.display = 'none';
+      document.querySelector(UISelectors.backBtn).style.display = 'none';
+      document.querySelector(UISelectors.addBtn).style.display = 'block';
     }
   };
 })();
