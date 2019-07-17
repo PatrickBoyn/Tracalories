@@ -80,9 +80,6 @@ const UICtrl = (() => {
       document.querySelector(UISelectors.itemNameInput).value = '';
       document.querySelector(UISelectors.itemCaloriesInput).value = '';
     },
-    hideList: () => {
-      document.querySelector(UISelectors.itemList).style.display = 'none';
-    },
     getSelectors: () => {
       return UISelectors;
     }
@@ -112,12 +109,7 @@ const App = ((ItemCtrl, UICtrl) => {
   return {
     init: () => {
       const items = ItemCtrl.getItems();
-
-      if (items.length === 0) {
-        UICtrl.hideList();
-      } else {
-        UICtrl.populateItemList(items);
-      }
+      UICtrl.populateItemList(items);
 
       loadEventListeners();
     }
