@@ -78,6 +78,9 @@ const UICtrl = (() => {
       document.querySelector(UISelectors.itemNameInput).value = '';
       document.querySelector(UISelectors.itemCaloriesInput).value = '';
     },
+    hideList: () => {
+      document.querySelector(UISelectors.itemList).style.display = 'none';
+    },
     getSelectors: () => {
       return UISelectors;
     }
