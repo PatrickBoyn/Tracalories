@@ -100,9 +100,9 @@ const App = ((ItemCtrl, UICtrl) => {
     if (input.name !== '' && input.calories !== '') {
       const newItem = ItemCtrl.addItem(input.name, input.calories);
       UICtrl.addListItem(newItem);
-    }
 
-    UICtrl.clearInput();
+      UICtrl.clearInput();
+    }
 
     e.preventDefault();
   };
