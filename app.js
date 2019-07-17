@@ -69,6 +69,9 @@ const UICtrl = (() => {
       const li = document.createElement('li');
       li.className = 'collection-item';
       li.id = `item-${item.id}`;
+      li.innerHTML = `<strong>${item.name}: </strong> <em>${
+        item.calories
+      } Calories</em> <a href="#" class="secondary-content">Edit Item </a>`;
     },
     getSelectors: () => {
       return UISelectors;
