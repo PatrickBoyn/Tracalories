@@ -56,6 +56,7 @@ const UICtrl = (() => {
     addBtn: '.add-btn',
     updateBtn: '.upadate-btn',
     deleteBtn: '.delete-btn',
+    backBtn: '.back-btn',
     itemNameInput: '#item-name',
     itemCaloriesInput: '#item-calories',
     totalCalories: '.total-calories'
