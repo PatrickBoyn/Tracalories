@@ -54,6 +54,8 @@ const UICtrl = (() => {
   const UISelectors = {
     itemList: '#item-list',
     addBtn: '.add-btn',
+    updateBtn: '.upadate-btn',
+    deleteBtn: '.delete-btn',
     itemNameInput: '#item-name',
     itemCaloriesInput: '#item-calories',
     totalCalories: '.total-calories'
