@@ -98,7 +98,9 @@ const UICtrl = (() => {
     getSelectors: () => {
       return UISelectors;
     },
-    clearEditState: () => {}
+    clearEditState: () => {
+      UICtrl.clearInput();
+    }
   };
 })();
 
