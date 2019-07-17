@@ -65,6 +65,9 @@ const UICtrl = (() => {
         calories: document.querySelector(UISelectors.itemCaloriesInput).value
       };
     },
+    addListItem: item => {
+      const li = document.createElement('li');
+    },
     getSelectors: () => {
       return UISelectors;
     }
@@ -84,6 +87,7 @@ const App = ((ItemCtrl, UICtrl) => {
 
     if (input.name !== '' && input.calories !== '') {
       const newItem = ItemCtrl.addItem(input.name, input.calories);
+      UICtrl.addListItem(newItem);
     }
 
     e.preventDefault();
