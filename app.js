@@ -141,6 +141,7 @@ const App = ((ItemCtrl, UICtrl) => {
   };
   return {
     init: () => {
+      UICtrl.clearEditState();
       const items = ItemCtrl.getItems();
       UICtrl.populateItemList(items);
 
