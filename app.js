@@ -160,6 +160,8 @@ const App = ((ItemCtrl, UICtrl) => {
       const id = parseInt(listArray[1]);
 
       const itemToEdit = ItemCtrl.getItemById(id);
+
+      console.log(itemToEdit);
     }
 
     e.preventDefault();
