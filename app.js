@@ -57,7 +57,11 @@ const ItemCtrl = (() => {
 
       return found;
     },
-    deleteItem: id => {},
+    deleteItem: id => {
+      const ids = state.items.map(item => {
+        return item.id;
+      });
+    },
     setCurrentItem: item => {
       state.currentItem = item;
     },
