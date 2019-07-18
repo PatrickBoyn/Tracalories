@@ -291,6 +291,7 @@ const App = ((ItemCtrl, UICtrl) => {
 
   const clearAllItems = () => {
     ItemCtrl.clearAll();
+    UICtrl.removeAllItems();
   };
 
   const goBackSubmit = e => {
