@@ -300,6 +300,10 @@ const App = ((ItemCtrl, UICtrl) => {
 
   const clearAllItems = () => {
     ItemCtrl.clearAll();
+
+    const totalCalories = ITemCtr.getTotalCalories();
+    UICtrl.showTotalCalories(totalCalories);
+
     UICtrl.removeAllItems();
   };
 
