@@ -92,6 +92,7 @@ const UICtrl = (() => {
   const UISelectors = {
     itemList: '#item-list',
     listItems: '#item-list li',
+    clearBtn: '.clear-btn',
     addBtn: '.add-btn',
     updateBtn: '.update-btn',
     deleteBtn: '.delete-btn',
