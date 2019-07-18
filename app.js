@@ -117,6 +117,10 @@ const App = ((ItemCtrl, UICtrl) => {
     document
       .querySelector(UISelectors.addBtn)
       .addEventListener('click', itemAddSubmit);
+
+    document
+      .querySelector(UISelectors.itemList)
+      .addEventListener('click', itemUpdateSubmit);
   };
 
   const itemAddSubmit = e => {
@@ -142,6 +146,7 @@ const App = ((ItemCtrl, UICtrl) => {
   return {
     init: () => {
       UICtrl.clearEditState();
+
       const items = ItemCtrl.getItems();
       UICtrl.populateItemList(items);
 
