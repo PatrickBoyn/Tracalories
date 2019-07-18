@@ -151,6 +151,10 @@ const App = ((ItemCtrl, UICtrl) => {
     document
       .querySelector(UISelectors.itemList)
       .addEventListener('click', itemEditClick);
+
+    document
+      .querySelector(UISelectors.updateBtn)
+      .addEventListener('click', itemUpdateSubmit);
   };
 
   const itemAddSubmit = e => {
