@@ -150,7 +150,7 @@ const App = ((ItemCtrl, UICtrl) => {
 
     document
       .querySelector(UISelectors.itemList)
-      .addEventListener('click', itemUpdateSubmit);
+      .addEventListener('click', itemEditClick);
   };
 
   const itemAddSubmit = e => {
@@ -174,7 +174,7 @@ const App = ((ItemCtrl, UICtrl) => {
     e.preventDefault();
   };
 
-  const itemUpdateSubmit = e => {
+  const itemEditClick = e => {
     if (e.target.classList.contains('edit-content')) {
       const listId = e.target.parentNode.id;
       const listArray = listId.split('-');
