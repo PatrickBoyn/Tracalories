@@ -86,7 +86,7 @@ const UICtrl = (() => {
       li.id = `item-${item.id}`;
       li.innerHTML = `<strong>${item.name}: </strong> <em>${
         item.calories
-      } Calories</em> <a href="#" class="secondary-content">Edit Item </a>`;
+      } Calories</em> <a href="#" class="edit-content">Edit Item </a>`;
       document
         .querySelector(UISelectors.itemList)
         .insertAdjacentElement('beforeend', li);
@@ -145,7 +145,10 @@ const App = ((ItemCtrl, UICtrl) => {
   };
 
   const itemUpdateSubmit = e => {
-    console.log('This is a test.');
+    if (e.target.classList.contains('edit-content')) {
+      console.log('Edit item.');
+    }
+
     e.preventDefault();
   };
 
