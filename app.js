@@ -103,6 +103,7 @@ const UICtrl = (() => {
         <a href="#" class="edit-item">Edit Item</a></li>`;
       });
       document.querySelector(UISelectors.itemList).innerHTML = html;
+      console.log('populateItemList');
     },
     getItemInput: () => {
       return {
@@ -121,6 +122,7 @@ const UICtrl = (() => {
       document
         .querySelector(UISelectors.itemList)
         .insertAdjacentElement('beforeend', li);
+      console.log('Add List Item.');
     },
     updateListItem: updatedItem => {
       let listItems = document.querySelectorAll(UISelectors.listItems);
@@ -136,11 +138,13 @@ const UICtrl = (() => {
             updatedItem.calories
           } Calories</em> <a href="#" class="edit-item"> Edit Item</a>`;
         }
+        console.log('Update List Item');
       });
     },
     clearInput: () => {
       document.querySelector(UISelectors.itemNameInput).value = '';
       document.querySelector(UISelectors.itemCaloriesInput).value = '';
+      console.log('Clear Input');
     },
     addItemToForm: () => {
       document.querySelector(
@@ -150,6 +154,7 @@ const UICtrl = (() => {
         UISelectors.itemCaloriesInput
       ).value = ItemCtrl.getCurrentItem().calories;
       UICtrl.showEditState();
+      console.log('addItemToForm');
     },
     showTotalCalories: totals => {
       document.querySelector(UISelectors.totalCalories).textContent = totals;
@@ -201,7 +206,7 @@ const App = ((ItemCtrl, UICtrl) => {
 
     document
       .querySelector(UISelectors.backBtn)
-      .addEventListener('click', UICtrl.clearEditState);
+      .addEventListener('click', goBackSubmit);
   };
 
   const itemAddSubmit = e => {
@@ -221,7 +226,7 @@ const App = ((ItemCtrl, UICtrl) => {
     const totalCalories = ItemCtrl.getTotalCalories();
 
     UICtrl.showTotalCalories(totalCalories);
-
+    console.log('itemAddSubmit');
     e.preventDefault();
   };
 
@@ -236,6 +241,7 @@ const App = ((ItemCtrl, UICtrl) => {
 
       UICtrl.addItemToForm();
     }
+    console.log('itemEditClick');
 
     e.preventDefault();
   };
@@ -250,12 +256,18 @@ const App = ((ItemCtrl, UICtrl) => {
 
     UICtrl.showTotalCalories(totalCalories);
     UICtrl.clearEditState();
-
+    console.log('Update Submit');
     e.preventDefault();
   };
 
   const itemDeleteSubmit = e => {
     console.log('Delete button clicked.');
+    e.preventDefault();
+  };
+
+  const goBackSubmit = e => {
+    UICtrl.clearEditState();
+    e.preventDefault();
   };
 
   return {
