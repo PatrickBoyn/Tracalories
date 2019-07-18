@@ -143,6 +143,9 @@ const App = ((ItemCtrl, UICtrl) => {
 
     e.preventDefault();
   };
+
+  const itemUpdateSubmit = () => {};
+
   return {
     init: () => {
       UICtrl.clearEditState();
