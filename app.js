@@ -121,6 +121,7 @@ const UICtrl = (() => {
         .querySelector(UISelectors.itemList)
         .insertAdjacentElement('beforeend', li);
     },
+    updateListItem: updatedItem => {},
     clearInput: () => {
       document.querySelector(UISelectors.itemNameInput).value = '';
       document.querySelector(UISelectors.itemCaloriesInput).value = '';
