@@ -107,6 +107,14 @@ const UICtrl = (() => {
       document.querySelector(UISelectors.itemNameInput).value = '';
       document.querySelector(UISelectors.itemCaloriesInput).value = '';
     },
+    addItemToForm: () => {
+      document.querySelector(
+        UISelectors.itemNameInput
+      ).value = ItemCtrl.getCurrentItem().name;
+      document.querySelector(
+        UISelectors.itemCaloriesInput
+      ).value = ItemCtrl.getCurrentItem().calories;
+    },
     showTotalCalories: totals => {
       document.querySelector(UISelectors.totalCalories).textContent = totals;
     },
