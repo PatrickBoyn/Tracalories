@@ -148,6 +148,8 @@ const App = ((ItemCtrl, UICtrl) => {
       .querySelector(UISelectors.addBtn)
       .addEventListener('click', itemAddSubmit);
 
+    document.addEventListener('keypress', e => {});
+
     document
       .querySelector(UISelectors.itemList)
       .addEventListener('click', itemEditClick);
