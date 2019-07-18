@@ -125,6 +125,8 @@ const UICtrl = (() => {
     updateListItem: updatedItem => {
       let listItems = document.querySelectorAll(UISelectors.listItems);
       listItems = Array.from(listItems);
+
+      listItems.forEach(listItem => {});
     },
     clearInput: () => {
       document.querySelector(UISelectors.itemNameInput).value = '';
