@@ -194,6 +194,7 @@ const App = ((ItemCtrl, UICtrl) => {
   };
 
   const itemUpdateSubmit = e => {
+    console.log('Update complete.');
     e.preventDefault();
   };
 
