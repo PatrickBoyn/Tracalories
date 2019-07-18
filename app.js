@@ -47,7 +47,10 @@ const ItemCtrl = (() => {
 
       let found = null;
 
-      state.items.forEach(item => {});
+      state.items.forEach(item => {
+        if (item.id === state.currentItem.id) {
+        }
+      });
     },
     setCurrentItem: item => {
       state.currentItem = item;
