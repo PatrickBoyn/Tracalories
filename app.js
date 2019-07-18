@@ -35,7 +35,12 @@ const ItemCtrl = (() => {
     },
     getItemById: id => {
       let found = null;
-      state.items.forEach(item => {});
+      state.items.forEach(item => {
+        if (item.id === id) {
+          found = item;
+        }
+      });
+      return found;
     },
     getTotalCalories: () => {
       let total = 0;
