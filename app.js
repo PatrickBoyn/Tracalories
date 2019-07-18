@@ -169,7 +169,13 @@ const UICtrl = (() => {
       ).value = ItemCtrl.getCurrentItem().calories;
       UICtrl.showEditState();
     },
-    removeAllItems: () => {},
+    removeAllItems: () => {
+      let listItems = document.querySelectorAll(UISelectors.listItems);
+
+      listItems.Array.from(listItems);
+
+      listItems.forEach(item => {});
+    },
     showTotalCalories: totals => {
       document.querySelector(UISelectors.totalCalories).textContent = totals;
     },
