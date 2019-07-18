@@ -148,7 +148,8 @@ const App = ((ItemCtrl, UICtrl) => {
     if (e.target.classList.contains('edit-content')) {
       const listId = e.target.parentNode.id;
       const listArray = listId.split('-');
-      console.log(listArray);
+      const id = parseInt(listArray[1]);
+      console.log(id);
     }
 
     e.preventDefault();
