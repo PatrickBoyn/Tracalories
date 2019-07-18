@@ -129,11 +129,11 @@ const UICtrl = (() => {
       listItems.forEach(listItem => {
         const itemID = listItem.getAttribute('id');
 
-        if (itemID === `item-${item.id}`) {
+        if (itemID === `item-${updatedItem.id}`) {
           document.querySelector(`#${itemID}`).innerHTML = `<strong>${
-            item.name
+            updatedItem.name
           }:</strong> <em>${
-            item.calories
+            updatedItem.calories
           } Calories</em> <a href="#" class="edit-item"> Edit Item</a>`;
         }
       });
