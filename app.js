@@ -130,6 +130,11 @@ const UICtrl = (() => {
         const itemID = listItem.getAttribute('id');
 
         if (itemID === `item-${item.id}`) {
+          document.querySelector(`#${itemID}`).innerHTML = `<strong>${
+            item.name
+          }:</strong> <em>${
+            item.calories
+          } Calories</em> <a href="#" class="edit-item"> Edit Item</a>`;
         }
       });
     },
