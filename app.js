@@ -65,6 +65,9 @@ const ItemCtrl = (() => {
 
       state.items.splice(index, 1);
     },
+    clearAll: () => {
+      state.items = [];
+    },
     setCurrentItem: item => {
       state.currentItem = item;
     },
