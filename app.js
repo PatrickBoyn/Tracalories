@@ -149,7 +149,8 @@ const App = ((ItemCtrl, UICtrl) => {
       const listId = e.target.parentNode.id;
       const listArray = listId.split('-');
       const id = parseInt(listArray[1]);
-      console.log(id);
+
+      const itemToEdit = ItemCtrl.getItemById(id);
     }
 
     e.preventDefault();
