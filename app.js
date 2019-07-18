@@ -146,7 +146,7 @@ const App = ((ItemCtrl, UICtrl) => {
 
   const itemUpdateSubmit = e => {
     if (e.target.classList.contains('edit-content')) {
-      const listId = e.target.parentNode;
+      const listId = e.target.parentNode.id;
       console.log(listId);
     }
 
