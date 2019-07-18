@@ -148,7 +148,10 @@ const App = ((ItemCtrl, UICtrl) => {
       .querySelector(UISelectors.addBtn)
       .addEventListener('click', itemAddSubmit);
 
-    document.addEventListener('keypress', e => {});
+    document.addEventListener('keypress', e => {
+      if (e.keyCode === 13 || e.which === 13) {
+      }
+    });
 
     document
       .querySelector(UISelectors.itemList)
