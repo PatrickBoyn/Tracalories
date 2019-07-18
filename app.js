@@ -46,6 +46,8 @@ const ItemCtrl = (() => {
       calories = parseInt(calories);
 
       let found = null;
+
+      state.items.forEach(item => {});
     },
     setCurrentItem: item => {
       state.currentItem = item;
