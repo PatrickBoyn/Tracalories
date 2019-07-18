@@ -254,6 +254,10 @@ const App = ((ItemCtrl, UICtrl) => {
     e.preventDefault();
   };
 
+  const itemDeleteSubmit = e => {
+    console.log('Delete button clicked.');
+  };
+
   return {
     init: () => {
       UICtrl.clearEditState();
