@@ -42,7 +42,11 @@ const ItemCtrl = (() => {
       });
       return found;
     },
-    updateItem: (name, calories) => {},
+    updateItem: (name, calories) => {
+      calories = parseInt(calories);
+
+      let found = null;
+    },
     setCurrentItem: item => {
       state.currentItem = item;
     },
