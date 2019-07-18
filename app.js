@@ -174,7 +174,9 @@ const UICtrl = (() => {
 
       listItems.Array.from(listItems);
 
-      listItems.forEach(item => {});
+      listItems.forEach(item => {
+        item.remove();
+      });
     },
     showTotalCalories: totals => {
       document.querySelector(UISelectors.totalCalories).textContent = totals;
