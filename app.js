@@ -144,7 +144,10 @@ const App = ((ItemCtrl, UICtrl) => {
     e.preventDefault();
   };
 
-  const itemUpdateSubmit = () => {};
+  const itemUpdateSubmit = e => {
+    console.log('This is a test.');
+    e.preventDefault();
+  };
 
   return {
     init: () => {
