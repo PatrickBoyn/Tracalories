@@ -164,6 +164,8 @@ const App = ((ItemCtrl, UICtrl) => {
 
       const itemToEdit = ItemCtrl.getItemById(id);
       ItemCtrl.setCurrentItem(itemToEdit);
+
+      UICtrl.addItemToForm();
     }
 
     e.preventDefault();
