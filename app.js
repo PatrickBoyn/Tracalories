@@ -218,6 +218,8 @@ const App = ((ItemCtrl, UICtrl) => {
   const itemUpdateSubmit = e => {
     const input = UICtrl.getItemInput();
     const updatedItem = ItemCtrl.updateItem(input.name, input.calories);
+
+    UICtrl.updateListItem(updatedItem);
     e.preventDefault();
   };
 
