@@ -54,6 +54,8 @@ const ItemCtrl = (() => {
           found = item;
         }
       });
+
+      return found;
     },
     setCurrentItem: item => {
       state.currentItem = item;
