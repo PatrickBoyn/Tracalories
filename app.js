@@ -254,7 +254,9 @@ const App = ((ItemCtrl, UICtrl) => {
   };
 
   const itemDeleteSubmit = e => {
-    console.log('Delete button clicked.');
+    const currentItem = ItemCtrl.getCurrentItem();
+
+    ItemCtrl.deleteItem(currentItem.id);
     e.preventDefault();
   };
 
