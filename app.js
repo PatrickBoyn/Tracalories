@@ -42,6 +42,7 @@ const ItemCtrl = (() => {
       });
       return found;
     },
+    updateItem: (name, calories) => {},
     setCurrentItem: item => {
       state.currentItem = item;
     },
