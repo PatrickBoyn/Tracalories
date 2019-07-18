@@ -49,6 +49,9 @@ const ItemCtrl = (() => {
 
       state.items.forEach(item => {
         if (item.id === state.currentItem.id) {
+          item.name = name;
+          item.calories = calories;
+          found = item;
         }
       });
     },
