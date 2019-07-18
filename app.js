@@ -217,6 +217,10 @@ const App = ((ItemCtrl, UICtrl) => {
     document
       .querySelector(UISelectors.backBtn)
       .addEventListener('click', goBackSubmit);
+
+    document
+      .querySelector(UISelectors.clearBtn)
+      .addEventListener('click', clearAllItems);
   };
 
   const itemAddSubmit = e => {
