@@ -61,6 +61,9 @@ const ItemCtrl = (() => {
       const ids = state.items.map(item => {
         return item.id;
       });
+      const index = ids.indexOf(id);
+
+      state.items.splice(index, 1);
     },
     setCurrentItem: item => {
       state.currentItem = item;
