@@ -57,6 +57,7 @@ const ItemCtrl = (() => {
 
       return found;
     },
+    deleteItem: id => {},
     setCurrentItem: item => {
       state.currentItem = item;
     },
