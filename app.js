@@ -45,6 +45,9 @@ const ItemCtrl = (() => {
     setCurrentItem: item => {
       state.currentItem = item;
     },
+    getCurrentItem: () => {
+      return state.currentItem;
+    },
     getTotalCalories: () => {
       let total = 0;
 
