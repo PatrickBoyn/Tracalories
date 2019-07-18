@@ -33,7 +33,10 @@ const ItemCtrl = (() => {
       console.log(state);
       return newItem;
     },
-    getItemById: () => {},
+    getItemById: id => {
+      let found = null;
+      state.items.forEach(item => {});
+    },
     getTotalCalories: () => {
       let total = 0;
 
