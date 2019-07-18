@@ -126,7 +126,12 @@ const UICtrl = (() => {
       let listItems = document.querySelectorAll(UISelectors.listItems);
       listItems = Array.from(listItems);
 
-      listItems.forEach(listItem => {});
+      listItems.forEach(listItem => {
+        const itemID = listItem.getAttribute('id');
+
+        if (itemID === `item-${item.id}`) {
+        }
+      });
     },
     clearInput: () => {
       document.querySelector(UISelectors.itemNameInput).value = '';
