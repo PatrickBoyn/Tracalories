@@ -146,7 +146,11 @@ const UICtrl = (() => {
         }
       });
     },
-    deleteListItem: () => {},
+    deleteListItem: id => {
+      const itemID = `#item-${id}`;
+      const item = document.querySelector(itemID);
+      item.remove();
+    },
     clearInput: () => {
       document.querySelector(UISelectors.itemNameInput).value = '';
       document.querySelector(UISelectors.itemCaloriesInput).value = '';
