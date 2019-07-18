@@ -265,6 +265,9 @@ const App = ((ItemCtrl, UICtrl) => {
     const currentItem = ItemCtrl.getCurrentItem();
 
     ItemCtrl.deleteItem(currentItem.id);
+
+    UICtrl.deleteListItem();
+
     e.preventDefault();
   };
 
