@@ -286,6 +286,10 @@ const App = ((ItemCtrl, UICtrl) => {
     e.preventDefault();
   };
 
+  const clearAllItems = () => {
+    ItemCtrl.clearAll();
+  };
+
   const goBackSubmit = e => {
     UICtrl.clearEditState();
     e.preventDefault();
