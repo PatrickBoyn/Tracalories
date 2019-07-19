@@ -1,5 +1,7 @@
 const StorageCtrl = (() => {
-  return {};
+  return {
+    storeItem: () => {}
+  };
 })();
 
 const ItemCtrl = (() => {
