@@ -206,7 +206,7 @@ const UICtrl = (() => {
   };
 })();
 
-const App = ((ItemCtrl, UICtrl) => {
+const App = ((ItemCtrl, StorageCtrl, UICtrl) => {
   const loadEventListeners = () => {
     const UISelectors = UICtrl.getSelectors();
     document
@@ -328,6 +328,6 @@ const App = ((ItemCtrl, UICtrl) => {
       loadEventListeners();
     }
   };
-})(ItemCtrl, UICtrl);
+})(ItemCtrl, StorageCtrl, UICtrl);
 
 App.init();
