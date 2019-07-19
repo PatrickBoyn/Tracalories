@@ -1,3 +1,7 @@
+const StorageCtrl = (() => {
+  return {};
+})();
+
 const ItemCtrl = (() => {
   // Apparently in order to be a constructor
   // This must be a "function", and not an arrow function.
