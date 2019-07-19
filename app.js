@@ -4,6 +4,8 @@ const StorageCtrl = (() => {
       let items = [];
 
       if (localStorage.getItem('items') === null) {
+        items = [];
+        items.push(newItem);
       } else {
       }
     }
