@@ -1,7 +1,7 @@
 const StorageCtrl = (() => {
   return {
     storeItem: newItem => {
-      let items = [];
+      let items;
 
       if (localStorage.getItem('items') === null) {
         items = [];
@@ -15,7 +15,16 @@ const StorageCtrl = (() => {
         localStorage.setItem('items', JSON.stringify(items));
       }
     },
-    getItemsFromStorage: () => {}
+    getItemsFromStorage: () => {
+      let items;
+
+      if (localStorage.getItem('items') === null) {
+        items = [];
+      } else {
+        items = JSON.parse(localStorage.getItem('items'));
+      }
+      return items;
+    }
   };
 })();
 
