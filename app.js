@@ -252,6 +252,8 @@ const App = ((ItemCtrl, StorageCtrl, UICtrl) => {
 
       UICtrl.showTotalCalories(totalCalories);
 
+      StorageCtrl.storeItem(newItem);
+
       UICtrl.clearInput();
     }
 
