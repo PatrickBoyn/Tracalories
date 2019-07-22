@@ -58,6 +58,8 @@ const ItemCtrl = (() => {
 
       return found;
     },
+
+    deleteItem: id => {},
     setCurrentItem: item => (data.currentItem = item),
     getCurrentItem: () => {
       return data.currentItem;
