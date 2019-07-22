@@ -1,4 +1,5 @@
 const StorageCtrl = (() => {})();
+// -----------------------------------------------
 const ItemCtrl = (() => {
   // Don't change, item constructor.
   const Item = function(id, name, calories) {
@@ -88,6 +89,7 @@ const ItemCtrl = (() => {
     }
   };
 })();
+// -----------------------------------------------------
 const UICtrl = (() => {
   const UISelectors = {
     itemList: '#item-list',
@@ -188,6 +190,7 @@ const UICtrl = (() => {
     }
   };
 })();
+// -------------------------------------------------
 const App = ((ItemCtrl, UICtrl) => {
   // TODO delete when finished with the app. For testing purposes.
   console.log(ItemCtrl.logData());
