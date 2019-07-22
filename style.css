@@ -16,29 +16,11 @@ body {
 }
 .container {
   display: grid;
-  grid-template-rows: 20vh 66.5vh;
   grid-template-columns: repeat(3 1fr);
+  grid-template-rows: 20vh 80vh;
   background-color: red;
 }
 .nav-wrapper {
-  display: flex;
-  justify-content: center;
-  background-color: teal;
-  padding: 1rem 0;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-}
-a:link,
-a:visited {
-  color: #fff;
-  text-decoration: none;
-}
-a:last-child {
-  margin-left: 8rem;
-}
-.card {
-  background-color: yellow;
-}
-.totals {
   background-color: purple;
+  grid-row: 1 / 2;
 }
