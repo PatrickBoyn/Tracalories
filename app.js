@@ -194,11 +194,6 @@ const UICtrl = (() => {
 })();
 // -------------------------------------------------
 const App = ((ItemCtrl, UICtrl) => {
-  // TODO delete when finished with the app. For testing purposes.
-  console.log(ItemCtrl.logData());
-  const items = ItemCtrl.getItems();
-  console.log(items);
-
   const loadEventListeners = () => {
     const UISelectors = UICtrl.getSelectors();
 
