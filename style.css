@@ -21,8 +21,12 @@ li {
   list-style: none;
   font-size: 1.5rem;
 }
+input {
+  border-radius: 3px;
+  padding-left: 2px;
+}
 input:focus {
-  outline: 1px solid #0e5748;
+  border: 2px solid #0e5748;
 }
 a:link,
 a:visited {
@@ -87,5 +91,12 @@ a:visited {
   border-radius: 3px;
   border: 2px solid #0e5748;
   background-color: #15856e;
+  color: #ffffff;
+}
+.edit-item:hover {
+  padding: 3px;
+  border-radius: 3px;
+  border: 2px solid #15856e;
+  background-color: #0e5748;
   color: #ffffff;
 }
