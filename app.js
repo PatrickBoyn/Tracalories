@@ -171,7 +171,11 @@ const UICtrl = (() => {
       ).value = ItemCtrl.getCurrentItem().calories;
       UICtrl.showEditState();
     },
-    removeItems: () => {},
+    removeItems: () => {
+      let listItems = document.querySelectorAll(UISelectors.listItems);
+
+      listItems = Array.from(listItems);
+    },
     showTotalCalories: total => {
       document.querySelector(UISelectors.totalCalories).textContent = total;
     },
