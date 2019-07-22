@@ -63,6 +63,10 @@ const ItemCtrl = (() => {
       const ids = data.items.map(item => {
         return item.id;
       });
+
+      const index = ids.indexOf(id);
+
+      data.items.splice(index, 1);
     },
     setCurrentItem: item => (data.currentItem = item),
     getCurrentItem: () => {
