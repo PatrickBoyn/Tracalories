@@ -24,3 +24,7 @@ body {
   background-color: purple;
   grid-row: 1 / 2;
 }
+.card-content {
+  grid-row: 2/-1;
+  background-color: yellow;
+}
