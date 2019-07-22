@@ -96,7 +96,8 @@ a:visited {
 .edit-item:hover {
   padding: 3px;
   border-radius: 3px;
-  border: 2px solid #15856e;
+  border: 2px solid #fff;
   background-color: #0e5748;
   color: #ffffff;
+  cursor: pointer;
 }
