@@ -197,6 +197,10 @@ const App = ((ItemCtrl, UICtrl) => {
       .addEventListener('click', itemEdit);
 
     document
+      .querySelector(UISelectors.deleteBtn)
+      .addEventListener('click', itemDeleteSubmit);
+
+    document
       .querySelector(UISelectors.updateBtn)
       .addEventListener('click', itemUpdateSubmit);
 
