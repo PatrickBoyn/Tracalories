@@ -1,5 +1,6 @@
 const StorageCtrl = (() => {})();
 // -----------------------------------------------
+// This is currently working like it should.
 const ItemCtrl = (() => {
   // Don't change, item constructor.
   const Item = function(id, name, calories) {
