@@ -59,7 +59,6 @@ const ItemCtrl = (() => {
 
       return found;
     },
-
     deleteItem: id => {
       const ids = data.items.map(item => {
         return item.id;
@@ -68,6 +67,9 @@ const ItemCtrl = (() => {
       const index = ids.indexOf(id);
 
       data.items.splice(index, 1);
+    },
+    clearItems: () => {
+      data.items = [];
     },
     setCurrentItem: item => (data.currentItem = item),
     getCurrentItem: () => {
