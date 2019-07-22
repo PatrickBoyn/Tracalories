@@ -148,6 +148,7 @@ const UICtrl = (() => {
         }
       });
     },
+    deleteListItem: id => {},
     clearInput: () => {
       document.querySelector(UISelectors.itemNameInput).value = '';
       document.querySelector(UISelectors.itemCaloriesInput).value = '';
