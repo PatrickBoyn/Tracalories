@@ -24,7 +24,13 @@ a:visited {
   grid-template-columns: repeat(3, 33.33vw);
   grid-template-rows: 6vh 83.9vh;
 }
+.brand-logo {
+  margin-right: 6rem;
+}
 .nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: purple;
   grid-row: 1 / 2;
   grid-column: 1/-1;
