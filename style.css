@@ -32,4 +32,5 @@ body {
 }
 .totals {
   background-color: yellowgreen;
+  grid-column: 2/3;
 }
