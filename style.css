@@ -18,6 +18,7 @@ a:link,
 a:visited {
   color: #fff;
   text-decoration: none;
+  font-size: 2rem;
 }
 .container {
   display: grid;
@@ -31,7 +32,7 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: purple;
+  background-color: #1eba9b;
   grid-row: 1 / 2;
   grid-column: 1/-1;
 }
@@ -53,4 +54,8 @@ a:visited {
 }
 .instructions {
   padding: 5rem;
+}
+.btn {
+  background-color: #242424;
+  padding: 5px;
 }
