@@ -21,6 +21,8 @@ body {
   background-color: red;
 }
 .nav-wrapper {
+  display: flex;
+  justify-content: center;
   background-color: teal;
 }
 .card {
