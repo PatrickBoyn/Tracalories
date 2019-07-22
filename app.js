@@ -301,6 +301,8 @@ const App = ((ItemCtrl, UICtrl) => {
 
   const clearAllItems = () => {
     ItemCtrl.clearItems();
+
+    UICtrl.removeItems();
   };
 
   // This has to be done because the default behaviour has to be prevented.
