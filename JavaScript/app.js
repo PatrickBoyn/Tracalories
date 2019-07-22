@@ -1,5 +1,5 @@
 // This is currently working as it should.
-const App = ((ItemCtrl, UICtrl) => {
+const App = ((ItemCtrl, StorageCtrl, UICtrl) => {
   const loadEventListeners = () => {
     const UISelectors = UICtrl.getSelectors();
 
@@ -44,6 +44,8 @@ const App = ((ItemCtrl, UICtrl) => {
 
       const totalCalories = ItemCtrl.getTotalCalories();
       UICtrl.showTotalCalories(totalCalories);
+
+      StorageCtrl.storeItem(newItem);
 
       UICtrl.clearInput();
     }
@@ -129,6 +131,6 @@ const App = ((ItemCtrl, UICtrl) => {
       loadEventListeners();
     }
   };
-})(ItemCtrl, UICtrl);
+})(ItemCtrl, StorageCtrl, UICtrl);
 
 App.init();

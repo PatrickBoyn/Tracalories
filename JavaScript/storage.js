@@ -1,1 +1,5 @@
-const StorageCtrl = (() => {})();
+const StorageCtrl = (() => {
+  return {
+    storeItem: () => {}
+  };
+})();
