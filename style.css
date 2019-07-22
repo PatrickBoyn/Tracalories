@@ -18,7 +18,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 33.33vw);
   grid-template-rows: 6vh 83.9vh;
-  background-color: red;
 }
 .nav-wrapper {
   background-color: purple;
@@ -26,19 +25,18 @@ body {
   grid-column: 1/-1;
 }
 .card-content {
-  grid-row: 2/1fr;
-  grid-column: 2/3;
+  grid-row: 2 / -1;
+  grid-column: 2 / 3;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 3rem 8rem;
-  background-color: yellow;
   height: 50%;
-  box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
 }
 .totals {
-  margin-top: 5rem;
+  margin-bottom: 10rem;
   background-color: yellowgreen;
   grid-column: 2/3;
   grid-row: 2/1fr;
