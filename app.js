@@ -171,6 +171,7 @@ const UICtrl = (() => {
       ).value = ItemCtrl.getCurrentItem().calories;
       UICtrl.showEditState();
     },
+    removeItems: () => {},
     showTotalCalories: total => {
       document.querySelector(UISelectors.totalCalories).textContent = total;
     },
