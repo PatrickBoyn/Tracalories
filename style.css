@@ -31,6 +31,7 @@ body {
   background-color: yellow;
 }
 .totals {
+  margin-top: 2rem;
   background-color: yellowgreen;
   grid-column: 2/3;
 }
