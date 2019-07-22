@@ -294,7 +294,9 @@ const App = ((ItemCtrl, UICtrl) => {
     e.preventDefault();
   };
 
-  const clearAllItems = () => {};
+  const clearAllItems = () => {
+    ItemCtrl.clearItems();
+  };
 
   // This has to be done because the default behaviour has to be prevented.
   const goBackSubmit = e => {
