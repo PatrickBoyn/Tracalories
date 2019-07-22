@@ -24,6 +24,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: teal;
+  padding: 1rem 0;
 }
 a:last-child {
   margin-left: 8rem;
