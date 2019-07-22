@@ -16,6 +16,8 @@ body {
 }
 .container {
   display: grid;
+  grid-template-rows: 20vh 66.5vh;
+  grid-template-columns: repeat(3 1fr);
   background-color: red;
 }
 .nav-wrapper {
