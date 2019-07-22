@@ -47,6 +47,15 @@ a:visited {
   text-decoration: none;
   font-size: 2rem;
 }
+#item-name {
+  margin-left: 3px;
+}
+.add-btn {
+  margin-left: 3px;
+}
+.update-btn {
+  margin-left: 3px;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(3, 33.33vw);
