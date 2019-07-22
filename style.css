@@ -17,7 +17,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(3, 33.33vw);
-  grid-template-rows: 6vh 93.9vh;
+  grid-template-rows: 6vh 83.9vh;
   background-color: red;
 }
 .nav-wrapper {
@@ -41,4 +41,5 @@ body {
   margin-top: 5rem;
   background-color: yellowgreen;
   grid-column: 2/3;
+  grid-row: 2/1fr;
 }
