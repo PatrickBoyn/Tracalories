@@ -38,6 +38,5 @@ body {
 .totals {
   margin-bottom: 10rem;
   background-color: yellowgreen;
-  grid-column: 2/3;
-  grid-row: 2/1fr;
+  grid-column: 3/4;
 }
