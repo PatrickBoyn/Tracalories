@@ -28,6 +28,11 @@ body {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
 a:last-child {
   margin-left: 8rem;
 }
