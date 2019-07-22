@@ -151,6 +151,7 @@ const UICtrl = (() => {
     deleteListItem: id => {
       const itemID = `#item-${id}`;
       const item = document.querySelector(itemID);
+      item.remove();
     },
     clearInput: () => {
       document.querySelector(UISelectors.itemNameInput).value = '';
