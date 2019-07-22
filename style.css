@@ -40,3 +40,6 @@ body {
   background-color: yellowgreen;
   grid-column: 3/4;
 }
+.instructions {
+  padding: 5rem;
+}
