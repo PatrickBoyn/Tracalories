@@ -128,6 +128,7 @@ const App = ((ItemCtrl, StorageCtrl, UICtrl) => {
       UICtrl.clearEditState();
 
       const items = ItemCtrl.getItems();
+
       UICtrl.populateItemList(items);
 
       const totalCalories = ItemCtrl.getTotalCalories();
