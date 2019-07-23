@@ -35,6 +35,16 @@ const StorageCtrl = (() => {
       });
       localStorage.setItem('items', JSON.stringify(items));
     },
-    deleteFromStorage: id => {}
+    deleteFromStorage: id => {
+      let items = JSON.parse(localStorage.getItem('items'));
+
+      items.forEach((item, index) => {
+        if (id === item.id) {
+          items.splice(index, 1);
+        }
+      });
+
+      localStorage.setItem('items', JSON.stringify(items));
+    }
   };
 })();
