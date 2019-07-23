@@ -1,5 +1,10 @@
 const StorageCtrl = (() => {
   return {
-    storeItem: () => {}
+    storeItem: item => {
+      let items = [];
+      if (localStorage.getItem('items') === null) {
+      } else {
+      }
+    }
   };
 })();
