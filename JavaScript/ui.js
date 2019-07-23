@@ -21,7 +21,7 @@ const UICtrl = (() => {
           item.name
         }</strong> <em>${
           item.calories
-        }  Calories</em> <a href="#" class="edit-item">Edit Item</a></li>`;
+        }  Calories</em> <button class="edit-item">Edit Item</button></li>`;
       });
 
       document.querySelector(UISelectors.itemList).innerHTML = html;
@@ -38,7 +38,7 @@ const UICtrl = (() => {
       li.id = `item-${item.id}`;
       li.innerHTML = `<strong>${item.name}: </strong> <em>${
         item.calories
-      }</em> Calories  <a href="#" class="edit-item">Edit Item</a>`;
+      }</em> Calories  <button class="edit-item">Edit Item<button>`;
 
       document
         .querySelector(UISelectors.itemList)
@@ -56,7 +56,7 @@ const UICtrl = (() => {
             item.name
           }: </strong> <em> ${
             item.calories
-          }</em> <a href="#" class="edit-item">Edit item</a>`;
+          }</em> <button class="edit-item">Edit Item<button>`;
         }
       });
     },
