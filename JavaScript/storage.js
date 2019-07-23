@@ -25,6 +25,8 @@ const StorageCtrl = (() => {
       }
       return items;
     },
-    updateStorage: updatedItem => {}
+    updateStorage: updatedItem => {
+      let items = JSON.parse(localStorage.getItem('items'));
+    }
   };
 })();
