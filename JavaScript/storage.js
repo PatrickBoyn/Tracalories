@@ -28,7 +28,11 @@ const StorageCtrl = (() => {
     updateStorage: updatedItem => {
       let items = JSON.parse(localStorage.getItem('items'));
 
-      items.forEach((item, index) => {});
+      items.forEach((item, index) => {
+        if (updatedItem.id === item.id) {
+          items.splice(index, 1, updatedItem);
+        }
+      });
     }
   };
 })();
