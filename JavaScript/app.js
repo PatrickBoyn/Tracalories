@@ -81,6 +81,8 @@ const App = ((ItemCtrl, StorageCtrl, UICtrl) => {
 
     UICtrl.showTotalCalories(totalCalories);
 
+    StorageCtrl.updateStorage(updatedItem);
+
     UICtrl.clearEditState();
 
     e.preventDefault();
