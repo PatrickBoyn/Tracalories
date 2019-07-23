@@ -34,6 +34,7 @@ const StorageCtrl = (() => {
         }
       });
       localStorage.setItem('items', JSON.stringify(items));
-    }
+    },
+    deleteFromStorage: id => {}
   };
 })();
