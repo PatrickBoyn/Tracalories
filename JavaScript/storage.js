@@ -24,6 +24,7 @@ const StorageCtrl = (() => {
         items = JSON.parse(localStorage.getItem('items'));
       }
       return items;
-    }
+    },
+    updateStorage: updatedItem => {}
   };
 })();
