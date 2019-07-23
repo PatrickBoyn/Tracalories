@@ -45,6 +45,9 @@ const StorageCtrl = (() => {
       });
 
       localStorage.setItem('items', JSON.stringify(items));
+    },
+    clearAllFromStorage: () => {
+      localStorage.removeItem('items');
     }
   };
 })();
