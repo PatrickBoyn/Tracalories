@@ -27,6 +27,8 @@ const StorageCtrl = (() => {
     },
     updateStorage: updatedItem => {
       let items = JSON.parse(localStorage.getItem('items'));
+
+      items.forEach((item, index) => {});
     }
   };
 })();
