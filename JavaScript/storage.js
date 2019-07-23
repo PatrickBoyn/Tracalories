@@ -15,6 +15,7 @@ const StorageCtrl = (() => {
 
         localStorage.setItem('items', JSON.stringify(items));
       }
-    }
+    },
+    getItemsFromStorage: () => {}
   };
 })();
