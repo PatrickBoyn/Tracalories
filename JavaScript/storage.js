@@ -33,6 +33,7 @@ const StorageCtrl = (() => {
           items.splice(index, 1, updatedItem);
         }
       });
+      localStorage.setItem('items', JSON.stringify(items));
     }
   };
 })();
