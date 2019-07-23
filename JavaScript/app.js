@@ -113,6 +113,7 @@ const App = ((ItemCtrl, StorageCtrl, UICtrl) => {
     UICtrl.showTotalCalories(totalCalories);
 
     UICtrl.removeItems();
+    StorageCtrl.clearAllFromStorage();
   };
 
   // This has to be done because the default behaviour has to be prevented.
