@@ -14,6 +14,7 @@ body {
   line-height: 1.6;
   font-family: sans-serif;
 }
+/* Changes the highlight color. */
 ::selection {
   background-color: #1eba9b;
   color: #fff;
@@ -32,6 +33,7 @@ input {
 input[type='number'] {
   margin: 4px;
 }
+/* Makes the number scroller vanish. */
 input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -90,8 +92,8 @@ a:visited {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 3rem 8rem;
-  height: 50%;
+  margin: 2rem 8rem;
+  height: 30%;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 .totals {
