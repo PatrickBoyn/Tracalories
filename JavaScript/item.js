@@ -8,7 +8,7 @@ const ItemCtrl = (() => {
   };
 
   const data = {
-    items: [],
+    items: StorageCtrl.getItemsFromStorage(),
     // This should be null.
     currentItem: null,
     totalCalories: 0
