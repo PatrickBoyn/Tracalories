@@ -99,6 +99,8 @@ const App = ((ItemCtrl, StorageCtrl, UICtrl) => {
 
     UICtrl.showTotalCalories(totalCalories);
 
+    StorageCtrl.deleteFromStorage(currentItem.i);
+
     UICtrl.clearEditState();
 
     e.preventDefault();
