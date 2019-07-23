@@ -12,6 +12,8 @@ const StorageCtrl = (() => {
         items = JSON.parse(localStorage.getItem('items'));
 
         items.push(item);
+
+        localStorage.setItem('items', JSON.stringify(items));
       }
     }
   };
